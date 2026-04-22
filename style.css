@@ -471,12 +471,12 @@ body {
     /* 2. Hero Section: Stack text on top of image */
     .hero {
         flex-direction: column;
+        align-items: center;   /* 🔥 THIS is missing */
         text-align: center;
-        padding: 40px 5%;
     }
 
-    .hero-content h1 {
-        font-size: 2.2rem; /* Smaller text for mobile screens */
+    .hero-content {
+        width: 100%;
     }
 
     .hero-btns {
