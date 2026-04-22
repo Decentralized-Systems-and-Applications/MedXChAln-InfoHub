@@ -453,6 +453,9 @@ body {
 }
 
 /* --- RESPONSIVE DESIGN (PHONES) --- */
+body {
+    overflow-x: hidden;
+}
 
 @media (max-width: 768px) {
     /* 1. Navbar: Stack logo and links or allow wrapping */
