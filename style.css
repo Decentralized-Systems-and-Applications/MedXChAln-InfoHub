@@ -255,7 +255,6 @@ body {
 .cta-actions-centered {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap; /* Allows buttons to stack if narrow */
     gap: 20px;
 }
