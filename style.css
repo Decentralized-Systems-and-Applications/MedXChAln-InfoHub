@@ -168,18 +168,6 @@ body {
     text-align: center; /* Centered title */
 }
 
-.watermark {
-    position: absolute;
-    font-size: 8rem;
-    font-weight: 900;
-    color: rgba(0,0,0,0.04);
-    top: -40px;
-    left: 50%;
-    transform: translateX(-50%); /* Center the watermark */
-    z-index: 0;
-    white-space: nowrap;
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -244,11 +232,14 @@ body {
 .matter-card:hover { transform: translateY(-10px); border-color: #40e0d0; }
 
 /* --- CTA Section --- */
+
 .cta-section {
     padding: 120px 8%;
     background-color: #ffffff;
     text-align: center;
-}
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically if they stack */
 
 .cta-text-wrapper {
     max-width: 900px;
