@@ -255,6 +255,7 @@ body {
     justify-content: center;
     flex-wrap: wrap; /* Allows buttons to stack if narrow */
     gap: 20px;
+    margin-top: 40px;
 }
 
 .btn-primary {
@@ -346,8 +347,17 @@ body {
     }
 
     .cta-actions-centered {
-        flex-direction: column;
-        align-items: center;
+        display: flex;         /* Ensures flexbox is active */
+        flex-direction: column; /* Stacks them vertically */
+        align-items: center;    /* Centers them horizontally in the column */
+        width: 100%;           /* Takes up full width of the wrapper */
+        gap: 15px;
+
+    }
+    .cta-actions-centered a {
+        width: 90%;            /* Makes buttons wide and easy to tap */
+        max-width: 320px;      /* Prevents them from getting too huge on tablets */
+        text-align: center;    /* Centers the text inside the button box */
     }
 
     .btn-primary, .btn-outline-green {
