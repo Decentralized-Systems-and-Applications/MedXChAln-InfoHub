@@ -261,22 +261,55 @@ body {
 .btn-primary {
     background-color: #0a192f;
     color: #40e0d0;
-    padding: 16px 32px;
+    padding: 12px 24px;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
+    
+    /* Center the text and handle wrapping */
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    /* Make them the same size */
+    width: 100%;
+    max-width: 320px;
+    min-height: 64px; /* Fixes the uneven heights from your screenshot */
+    transition: all 0.3s ease;
 }
 
 .btn-outline-green {
     border: 2px solid #008080;
     color: #008080;
-    width: 100%;
-    max-width:320px;
-    padding: 14px 30px;
-    text-decoration: none;
+    background: transparent;
+    padding: 12px 24px;
     border-radius: 6px;
+    text-decoration: none;
     font-weight: 600;
+
+    /* Center the text and handle wrapping */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* Match the primary button size exactly */
+    width: 100%;
+    max-width: 320px;
+    min-height: 64px; 
+    transition: all 0.3s ease;
+}
+
+/* Add a hover effect so users know they are clickable */
+.btn-primary:hover {
+    background-color: #112240;
+    transform: translateY(-2px);
+}
+
+.btn-outline-green:hover {
+    background-color: rgba(0, 128, 128, 0.1);
+    transform: translateY(-2px);
 }
 
 /* --- UPDATED RESPONSIVE (MOBILE) --- */
